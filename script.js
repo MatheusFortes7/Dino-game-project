@@ -40,7 +40,7 @@ function jump() {
 
 function createCactus() {
   const cactus = document.createElement('div');
-  let cactusPosition = 1000;
+  let cactusPosition = 1500;
   let randomTime = Math.random() * 6000;
 
   if (isGameOver) return;
@@ -58,9 +58,9 @@ function createCactus() {
       // Game over
       clearInterval(leftTimer);
       isGameOver = true;
-      document.body.innerHTML = '<h1 class="game-over">Fim de jogo</h1>';
+      document.body.innerHTML = '<h1 class="game-over">Fim de jogo</h1><a class="texto-fim"><p>Para jogar novamente aperte o botao "F5"</p></a>';
     } else {
-      cactusPosition -= 10;
+      cactusPosition -= 15;
       cactus.style.left = cactusPosition + 'px';
     }
   }, 20);

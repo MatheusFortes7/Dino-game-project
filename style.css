@@ -23,6 +23,15 @@ body {
     color: #666;
     margin: 50px 0;
     font-family: arial;
+    font-size: 50px;
+  }
+
+  .texto-fim{
+      text-align: center;
+      margin: 50px 0;
+      font-family: arial;
+      font-size: large;
+      color: #666;
   }
   
   @keyframes slideright {
@@ -39,7 +48,7 @@ body {
     bottom: 0px;
     background-image: url('background.png');
     background-repeat: repeat-x;
-    animation: slideright 600s infinite linear;
+    animation: slideright 400s infinite linear;
     -webkit-animation: slideright 600s infinite linear;
     width: 100%;
     height: 200px;
